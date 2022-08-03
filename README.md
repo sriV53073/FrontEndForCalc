@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is Full stack web app, that uses React js in the front-end and Nodes Js/ Express/socket.io in the back end. The back-end creates a socket. Using socket .io. The Front end also uses socket .io
 
-## Available Scripts
+Features
 
-In the project directory, you can run:
+Created A Front End Using React Js. The Home Page Ask for you to login with a name. Which is stores in Local Storage. So you can use it in a different Component even after the state resets. Once You Loging You go to the Calculator Page Which uses the name you logged in with to connect to the socket in the back-end. Once you you connect to the socket. The calculator Front-end emits a join with the socket. Once you emit a join, the socket listens for it and once it gets it, it creates a one on one connection with the front end socket, with the name being the identifier. The Front end then emits a function when the user types in a function. The socket gets this and emits back an answer. Which the front end is listening for. Once the front end gets the answer it then displays it in html. You can also click logs button. Which download all the thransaction that the user has done with the back-end. It does this by sending a get request to the back-end in the "logs" route. Once you are done you can click exit. It takes you back to the home page. Where you can type in a new name.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Site Acess you can acess the site at https://sri-calculator.herokuapp.com/ It might take some time to load because heroku, puts the app to sleep.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Cloning You can clone the repo if you want to use it and change the code based on what you need. You would also need to create your own server or find you own way to implement that.
 
-### `npm test`
+GitHub Link for Back-end https://github.com/sriV53073/ProjectNetworks
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+License
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+100% free to use and open source. 🙈 🙉 🙊
